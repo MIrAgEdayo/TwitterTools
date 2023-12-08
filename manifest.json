@@ -1,0 +1,15 @@
+{
+    "name": "NpSpam",
+    "description": "Twitterからspamを消そうプロジェクト",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+          "js": ["content.js"],
+          "matches": ["https://twitter.com/*"]
+        }
+    ]
+}
