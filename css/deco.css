@@ -10,8 +10,8 @@
   }
   
   .toggle_label {
-    width: 75px;
-    height: 35px;
+    width: 43px;
+    height: 20px;
     background: #ccc;
     position: relative;
     display: inline-block;
@@ -24,8 +24,8 @@
   .toggle_label:after {
     content: "";
     position: absolute;
-    width: 35px;
-    height: 35px;
+    width: 20px;
+    height: 20px;
     border-radius: 100%;
     left: 0;
     top: 0;
@@ -41,13 +41,13 @@
   
   /* スライダーの移動範囲 */
   .toggle_input:checked + .toggle_label:after {
-    left: 40px;
+    left: 25px;
   }
   
   /* 当たり判定? */
   .toggle_button {
     position: relative;
-    width: 75px;
-    height: 35px;
+    width: 43px;
+    height: 20px;
     margin: auto;
   }
