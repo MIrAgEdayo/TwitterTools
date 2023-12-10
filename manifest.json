@@ -1,14 +1,17 @@
 {
-	"name": "NpSpam",
-	"description": "Twitterからspamを消そうプロジェクト",
+	"name": "TwitterTools",
+	"description": "Twitterのための便利な機能を追加します",
 	"version": "1.0",
 	"manifest_version": 3,
 	"action": {
-		"default_popup": "popup.html"
+		"default_popup": "menu.html"
 	},
 	"content_scripts": [
 		{
-		  "js": ["content.js"],
+		  "js": [
+			"modules/removeSpam.js",
+			"modules/removeAffiliate.js"
+		],
 		  "matches": ["https://twitter.com/*"]
 		}
 	]
